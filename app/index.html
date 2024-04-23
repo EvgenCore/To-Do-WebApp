@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1 class="bg-red-900 ">dededewfdewfc</h1>
+<body class="bg-verySoftOrange sm:bg-gradient-to-r  md:bg-gradient-to-r lg:bg-gradient-to-r from-verySoftOrange to-lightGrayishOrange">
+    
+
+    <main class="flex justify-center mt-12">
+        <div>
+            <div>
+                <div class="flex justify-center">
+                    <h1 class="app">My To-Do List</h1>
+                </div>
+                
+        
+                <div class="input-header">
+                    <div class="flex justify-center"><h1 class="dateInfo"><span id="date"></span></h1></div>
+                    <div class="to-do-input">
+                        <input type="text" id="item" class="inputBar" placeholder="Enter a task..."><button id="enter" class="enterBtn">Enter</button>
+            
+                    </div>
+                </div>
+                
+            </div>
+    
+            <!-- Main content -->
+            <div class="to-do-list"></div>
+
+        </div>
+
+    </main>
+
+
 </body>
 </html>

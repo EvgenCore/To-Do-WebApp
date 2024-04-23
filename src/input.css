@@ -1,3 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+@layer components  {
+
+    .app{
+        @apply text-3xl md:text-6xl lg:text-6xl transition duration-300 ease-in-out lg:hover:scale-110 md:hover:scale-110 cursor-default text-darkModeratePink 
+    }
+
+
+    .input-header {
+        @apply mt-5 
+    }
+
+    .dateInfo {
+        @apply md:text-xl lg:text-xl cursor-default text-veryDarkBlue italic font-bold
+    }
+
+    .to-do-input {
+        @apply mt-5 mb-14 flex lg:justify-between  md:justify-between justify-around
+    }
+  
+    .inputBar{
+        @apply border-4 lg:mr-5  md:w-80 lg:w-80 h-10 bg-lightGrayishOrange  pl-4 w-44 border-veryDarkBlue
+    }
+
+    .enterBtn{
+        @apply hover:scale-105 active:text-darkModeratePink text-2xl text-veryDarkBlue
+    }
+
+    
+
+    .mainText{
+        @apply md:w-96 lg:w-96 bg-lightGrayishOrange text-xl pl-2 pt-1
+    }
+
+
+    .item {
+        @apply mb-7 
+    }
+
+    .input-controller{
+        @apply flex 
+    }
+
+    .edit-controller {
+        @apply ml-2
+    }
+
+
+    .deleteBtn {
+        @apply text-2xl transition duration-300 ease-in-out hover:scale-110  cursor-pointer  text-customGreen
+    }
+
+    .editBtn {
+        @apply text-2xl transition duration-300 ease-in-out hover:scale-110 cursor-pointer 
+    }
+
+
+
+
+    .update-controller {
+        @apply mb-7
+    }
+    .saveBtn{
+        @apply ml-2 mt-1 text-veryDarkBlue
+    }
+    .cancelBtn {
+        @apply ml-2 mt-1 text-veryDarkBlue
+    }
+}
+
+
+@layer base{
+    html{
+        font-family: "Righteous", sans-serif;
+    }
+}
