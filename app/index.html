@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My To-Do List</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="./index.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -14,7 +14,6 @@
 </head>
 <body class="bg-verySoftOrange sm:bg-gradient-to-r  md:bg-gradient-to-r lg:bg-gradient-to-r from-verySoftOrange to-lightGrayishOrange">
     
-
     <main class="flex justify-center mt-12">
         <div>
             <div>
@@ -22,19 +21,49 @@
                     <h1 class="app">My To-Do List</h1>
                 </div>
                 
-        
+                <!-- INPUT SECTOR -->
                 <div class="input-header">
                     <div class="flex justify-center"><h1 class="dateInfo"><span id="date"></span></h1></div>
                     <div class="to-do-input">
-                        <input type="text" id="item" class="inputBar" placeholder="Enter a task..."><button id="enter" class="enterBtn">Enter</button>
+                        <div class="flex ">
+                            <input type="text" id="item" class="inputBar" placeholder="Enter a task...">
+                            <button id="enter" class="enterBtn">Enter</button>
+                        </div>
+                        <label class="text-xl" for="tag">Choose a tag:</label>
+                        <select name="tag" class="tag" id="tag">
+                            <option value="personal">personal</option>
+                            <option value="work">work</option>
+                            <option value="cleaning">cleaning</option>
+                            <option value="shopping">shopping</option>
+                            <option value="coding">coding</option>
+                            <option value="health">health</option>
+                        </select>
+                        
             
+                    </div>
+
+
+                    <!-- FILTER -->
+                    <div class="mb-5 mt-10">
+                        <h2>Filter</h2>
+                        <div class="filterDiv">
+                            <button class="filterButton" id="filterAll">all</button>
+                            <button class="filterButton" id="filterPersonal">personal</button>
+                            <button class="filterButton" id="filterWork">work</button>
+                            <button class="filterButton" id="filterCleaning">cleaning</button>
+                            <button class="filterButton" id="filterShopping">shopping</button>
+                            <button class="filterButton" id="filterCoding">coding</button>
+                            <button class="filterButton" id="filterHealth">health</button>
+                        </div>
                     </div>
                 </div>
                 
             </div>
     
             <!-- Main content -->
-            <div class="to-do-list"></div>
+            <div class="to-do-list">
+
+            </div>
 
         </div>
 

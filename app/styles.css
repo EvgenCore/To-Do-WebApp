@@ -597,6 +597,8 @@ html{
   }
 }
 
+/* input-header */
+
 .input-header {
   margin-top: 1.25rem;
 }
@@ -625,20 +627,25 @@ html{
 
 .to-do-input {
   margin-top: 1.25rem;
-  margin-bottom: 3.5rem;
-  display: flex;
-  justify-content: space-around;
+  margin-bottom: 1.25rem;
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .to-do-input {
+    margin-left: 0px;
+  }
 }
 
 @media (min-width: 768px) {
   .to-do-input {
-    justify-content: space-between;
+    margin-left: 0px;
   }
 }
 
 @media (min-width: 1024px) {
   .to-do-input {
-    justify-content: space-between;
+    margin-left: 0px;
   }
 }
 
@@ -661,12 +668,18 @@ html{
 
 @media (min-width: 1024px) {
   .inputBar {
-    margin-right: 1.25rem;
+    margin-right: 0.5rem;
     width: 20rem;
   }
 }
 
 .enterBtn {
+  margin-left: 0.5rem;
+  height: 2.5rem;
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(18 60 105 / var(--tw-border-opacity));
+  padding: 0.25rem;
   font-size: 1.5rem;
   line-height: 2rem;
   --tw-text-opacity: 1;
@@ -683,6 +696,24 @@ html{
   --tw-text-opacity: 1;
   color: rgb(172 59 97 / var(--tw-text-opacity));
 }
+
+@media (min-width: 768px) {
+  .enterBtn {
+    margin-left: 1.25rem;
+  }
+}
+
+.tag {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(18 60 105 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 226 220 / var(--tw-bg-opacity));
+}
+
+/* input-header */
+
+/* To Do's */
 
 .mainText {
   --tw-bg-opacity: 1;
@@ -705,13 +736,23 @@ html{
   }
 }
 
-.item {
-  margin-bottom: 1.75rem;
+.toDoTag {
+  font-style: italic;
+  opacity: 0.4;
 }
 
-.input-controller {
-  display: flex;
+.item {
+  margin-bottom: 1.25rem;
 }
+
+.toDoMainDiv {
+  display: flex;
+  align-items: center;
+}
+
+/* To Do's */
+
+/*edit-controller*/
 
 .edit-controller {
   margin-left: 0.5rem;
@@ -753,6 +794,10 @@ html{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/*edit-controller*/
+
+/*  update-controller  */
+
 .update-controller {
   margin-bottom: 1.75rem;
 }
@@ -769,6 +814,70 @@ html{
   margin-top: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(18 60 105 / var(--tw-text-opacity));
+}
+
+/*  update-controller  */
+
+/* filter */
+
+.filterDiv {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .filterDiv {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .filterDiv {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filterDiv {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.filterButton {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(18 60 105 / var(--tw-border-opacity));
+  padding: 0.25rem;
+}
+
+.filterButton:hover {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 768px) {
+  .filterButton {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .filterButton {
+    margin-top: 0px;
+  }
+}
+
+/* filter */
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-12 {
@@ -800,6 +909,11 @@ html{
 
 .to-lightGrayishOrange {
   --tw-gradient-to: #eee2dc var(--tw-gradient-to-position);
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 640px) {

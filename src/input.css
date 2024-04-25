@@ -6,12 +6,12 @@
 
 
 @layer components  {
-
     .app{
         @apply text-3xl md:text-6xl lg:text-6xl transition duration-300 ease-in-out lg:hover:scale-110 md:hover:scale-110 cursor-default text-darkModeratePink 
     }
 
 
+    /* input-header */
     .input-header {
         @apply mt-5 
     }
@@ -21,36 +21,46 @@
     }
 
     .to-do-input {
-        @apply mt-5 mb-14 flex lg:justify-between  md:justify-between justify-around
+        @apply mt-5 mb-5 ml-2 lg:ml-0 md:ml-0 sm:ml-0
     }
   
     .inputBar{
-        @apply border-4 lg:mr-5  md:w-80 lg:w-80 h-10 bg-lightGrayishOrange  pl-4 w-44 border-veryDarkBlue
+        @apply border-4 lg:mr-2  md:w-80 lg:w-80 h-10 bg-lightGrayishOrange  pl-4 w-44 border-veryDarkBlue
     }
 
     .enterBtn{
-        @apply hover:scale-105 active:text-darkModeratePink text-2xl text-veryDarkBlue
+        @apply hover:scale-105 active:text-darkModeratePink text-2xl h-10  p-1 md:ml-5 ml-2 text-veryDarkBlue border-4 border-veryDarkBlue 
     }
 
-    
+    .tag{
+        @apply bg-lightGrayishOrange border-2 border-veryDarkBlue
+    }
+    /* input-header */
 
+
+
+    /* To Do's */
     .mainText{
         @apply md:w-96 lg:w-96 bg-lightGrayishOrange text-xl pl-2 pt-1
     }
-
-
+   .toDoTag {
+        @apply opacity-40 italic
+    }
     .item {
-        @apply mb-7 
+        @apply mb-5
     }
 
-    .input-controller{
-        @apply flex 
+     .toDoMainDiv{
+        @apply flex items-center
     }
+    /* To Do's */
 
+
+
+    /*edit-controller*/
     .edit-controller {
         @apply ml-2
     }
-
 
     .deleteBtn {
         @apply text-2xl transition duration-300 ease-in-out hover:scale-110  cursor-pointer  text-customGreen
@@ -59,10 +69,11 @@
     .editBtn {
         @apply text-2xl transition duration-300 ease-in-out hover:scale-110 cursor-pointer 
     }
+    /*edit-controller*/
 
 
 
-
+    /*  update-controller  */
     .update-controller {
         @apply mb-7
     }
@@ -72,6 +83,19 @@
     .cancelBtn {
         @apply ml-2 mt-1 text-veryDarkBlue
     }
+    /*  update-controller  */
+
+
+
+    /* filter */
+    .filterDiv {
+        @apply mt-2 lg:flex md:flex sm:flex lg:justify-center
+    }
+
+    .filterButton {
+        @apply mr-2 mt-2 lg:mt-0 md:mt-0 border-2 border-veryDarkBlue p-1 hover:scale-105
+    }
+    /* filter */
 }
 
 
